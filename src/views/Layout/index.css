@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  left: 150px;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 150px;
+  right: 0;
+}
+
+.footer {
+  bottom: 0;
+  left: 150px;
+  right: 0;
+  position: absolute;
+}
+
+.aside {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
