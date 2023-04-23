@@ -1,6 +1,7 @@
 .header {
   position: absolute;
   left: var(--sidebar-width);
+  height: var(--header-height);
   right: 0;
   top: 0;
 }
