@@ -1,7 +1,9 @@
-import "./index.css"
+import "./index.css";
+import sentences from "./sentences.json";
+
 export default function Quote() {
-  const source = "弱智吧";
-  const content = "人工智能能治工人。";
+  const n = sentences.length, idx = Math.floor(Math.random() * n);
+  const content = sentences[idx].content, source = sentences[idx].source;
   return (
     <div className="blockquote-wrapper">
       <div className="blockquote">
