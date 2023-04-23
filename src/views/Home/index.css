@@ -1,3 +1,16 @@
-.quote {
-  height: 10rem;
+.home .wrap {
+  margin: 2rem;
+  display: flex;
+  align-content: flex-end
+}
+
+.home .wrap .cards {
+  flex: 0 0 50rem;
+  background: purple;
+}
+
+.home .wrap .profile {
+  flex: 1;
+  background-color: antiquewhite;
+  padding: 1rem;
 }
