@@ -9,12 +9,19 @@ import {
 
 import ErrorPage from './views/ErrorPage/ErrorPage';
 import Layout from './views/Layout/Layout';
+import Home from './views/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "home",
+        element: <Home />
+      }
+    ]
   },
 ]);
 

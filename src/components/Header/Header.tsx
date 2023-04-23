@@ -1,4 +1,4 @@
-import Octocat from "./octocat";
+import Octocat from "./Octocat";
 
 export default function Header() {
   return (
