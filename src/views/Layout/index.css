@@ -1,13 +1,14 @@
 .header {
   position: absolute;
   left: var(--sidebar-width);
-  width: 100%;
+  right: 0;
   top: 0;
 }
 
 .content {
   position: absolute;
   left: var(--sidebar-width);
+  top: var(--header-height);
   right: 0;
 }
 
