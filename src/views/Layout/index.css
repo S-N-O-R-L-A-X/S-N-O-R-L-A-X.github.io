@@ -1,27 +1,18 @@
 .header {
   position: absolute;
-  left: 150px;
+  left: var(--sidebar-width);
+  width: 100%;
   top: 0;
-  right: 0;
 }
 
 .content {
   position: absolute;
-  bottom: 60px;
-  top: 60px;
-  left: 150px;
+  left: var(--sidebar-width);
   right: 0;
-}
-
-.footer {
-  bottom: 0;
-  left: 150px;
-  right: 0;
-  position: absolute;
 }
 
 .aside {
-  width: 150px;
+  width: var(--sidebar-width);
   position: absolute;
   top: 0;
   left: 0;

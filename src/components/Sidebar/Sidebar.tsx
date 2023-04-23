@@ -6,6 +6,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <SideNavigation
+        style={{ width: "100%" }}
         fixedItems={<><SideNavigationItem icon="chain-link" text="Useful Links" /><SideNavigationItem icon="history" text="History" /></>}
         onSelectionChange={function Ta() {}}
       >
