@@ -1,12 +1,9 @@
-import { ReactNode } from "react";
+import { PropsWithChildren, ReactNode } from "react";
 
-interface LabelProps {
-  children?: ReactNode | ReactNode[];
-}
 
-import "./index.css"
+import "./index.css";
 
-export default function Label(props: LabelProps) {
+export default function Label(props: PropsWithChildren) {
   const { children } = props;
   return (
     <>

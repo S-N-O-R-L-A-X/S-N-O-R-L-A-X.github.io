@@ -29,10 +29,10 @@
   position: absolute;
   content: "”";
   color: blue;
-  font-size: 10rem;
+  font-size: 5rem;
   line-height: 0;
   /* useful for position of quote*/
-  bottom: -2.5rem;
+  bottom: 0rem;
   right: 2rem;
 }
 
