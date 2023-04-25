@@ -3,7 +3,9 @@ import Octocat from "./Octocat";
 export default function Header() {
   return (
     <div>
-      Welcome to my site.
+      <p className="marquee">
+        Welcome to my site. I'm SNORLAX.
+      </p>
       <Octocat />
     </div>
   )
