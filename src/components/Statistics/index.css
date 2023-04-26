@@ -1,3 +1,166 @@
 .statistics img {
   width: 100%;
 }
+
+.error-box {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(#CBCDD3, 10%);
+}
+
+.error-box .alert {
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.error-box .info {
+  margin-top: -1rem;
+  font-size: 1rem;
+  font-weight: 100;
+  color: darken(#777777, 10%);
+}
+
+.red {
+  color: darken(#EF8D9C, 10%);
+}
+
+.two {
+  right: 12%;
+  opacity: .5;
+}
+
+.face2 {
+  position: relative;
+  width: 20%;
+  height: 45%;
+  background: #FCFCFC;
+  border-radius: 50%;
+  border: 1px solid #777777;
+  top: 5%;
+  left: 37.5%;
+  z-index: 2;
+  animation: roll 3s ease-in-out infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+
+  50% {
+    transform: rotate(168deg);
+    left: 60%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #777777;
+  border-radius: 50%;
+  top: 40%;
+  left: 20%;
+}
+
+.right {
+  left: 68%;
+}
+
+.mouth {
+  position: relative;
+  top: 43%;
+  left: 41%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.sad {
+  top: 49%;
+  border: 2px solid;
+  border-color: #777777 transparent transparent #777777;
+  transform: rotate(45deg);
+}
+
+.shadow {
+  position: relative;
+  width: 21%;
+  height: 3%;
+  opacity: .5;
+  background: #777777;
+  left: 40%;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.move {
+  animation: move 3s ease-in-out infinite;
+}
+
+
+.message {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 47%;
+}
+
+.scale {
+  animation: scale 1s ease-in infinite;
+}
+
+.button-box {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 15%;
+  border-radius: 20px;
+  top: 73%;
+  left: 25%;
+  outline: 0;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(black, .5);
+  transition: all .5s ease-in-out;
+}
+
+.button-box:hover {
+  background: darken(white, 5%);
+  transform: scale(1.05);
+  transition: all .3s ease-in-out;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+
+@keyframes move {
+  0% {
+    left: 25%;
+  }
+
+  50% {
+    left: 60%;
+  }
+
+  100% {
+    left: 25%;
+  }
+}
