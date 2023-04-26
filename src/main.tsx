@@ -6,13 +6,23 @@ import Layout from './views/Layout/Layout';
 
 import {
   createBrowserRouter,
+  Route,
   RouterProvider,
+  Router,
+  Routes
 } from "react-router-dom";
+import Home from './views/Home/Home';
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <Layout />,
+    children: [{
+      path: "/",
+      element: <Home />
+    }, {
+      path: "/home",
+      element: <Home />
+    }]
   },
 ]);
 

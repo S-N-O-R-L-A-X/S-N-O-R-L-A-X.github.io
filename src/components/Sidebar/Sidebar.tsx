@@ -7,6 +7,7 @@ import "@ui5/webcomponents-icons/dist/chain-link";
 import "@ui5/webcomponents-icons/dist/history";
 import "./index.css";
 
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   function navigate(event: Ui5CustomEvent<SideNavigationDomRef, { item: HTMLElement; }>) {
@@ -24,7 +25,8 @@ export default function Sidebar() {
         <SideNavigationItem
           icon="home"
           text="Home"
-        />
+        >
+        </SideNavigationItem>
         <SideNavigationItem
           icon="activity-2"
           text="Other projects"
