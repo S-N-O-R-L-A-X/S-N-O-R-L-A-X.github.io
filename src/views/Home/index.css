@@ -6,11 +6,11 @@
 
 .home .wrap .cards {
   flex: 0 0 50rem;
-  background: purple;
 }
 
 .home .wrap .profile {
   flex: 1;
   background-color: antiquewhite;
   padding: 1rem;
+  margin: 0 1rem;
 }
