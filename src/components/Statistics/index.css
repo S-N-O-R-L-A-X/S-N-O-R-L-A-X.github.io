@@ -109,7 +109,7 @@
 }
 
 .move {
-  animation: move 3s ease-in-out infinite;
+  animation: shadow-move 3s ease-in-out infinite;
 }
 
 
@@ -151,7 +151,7 @@
 }
 
 
-@keyframes move {
+@keyframes shadow-move {
   0% {
     left: 25%;
   }
@@ -186,10 +186,10 @@
   height: 36px;
   opacity: 0;
   font-family: Helvetica, Arial, sans-serif;
-  animation: move 2s linear infinite;
-  -o-animation: move 2s linear infinite;
-  -moz-animation: move 2s linear infinite;
-  -webkit-animation: move 2s linear infinite;
+  animation: loading-move 2s linear infinite;
+  -o-animation: loading-move 2s linear infinite;
+  -moz-animation: loading-move 2s linear infinite;
+  -webkit-animation: loading-move 2s linear infinite;
   transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -239,7 +239,7 @@
   -webkit-animation-delay: 1.2s;
 }
 
-@keyframes move {
+@keyframes loading-move {
   0% {
     left: 0;
     opacity: 0;
@@ -273,7 +273,7 @@
   }
 }
 
-@-moz-keyframes move {
+@-moz-keyframes loading-move {
   0% {
     left: 0;
     opacity: 0;
@@ -301,7 +301,7 @@
   }
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes loading-move {
   0% {
     left: 0;
     opacity: 0;
@@ -329,7 +329,7 @@
   }
 }
 
-@-o-keyframes move {
+@-o-keyframes loading-move {
   0% {
     left: 0;
     opacity: 0;

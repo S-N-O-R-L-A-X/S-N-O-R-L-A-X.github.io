@@ -27,7 +27,10 @@ export default function Statistics() {
   }
 
   getPictures();
-
+  useEffect(() => {
+    if (images.length > 0)
+      setIsLoading(false);
+  }, [images.length])
   return (
     <>
       {
@@ -48,9 +51,8 @@ export default function Statistics() {
             </div>
           ) : (
             <div onError={handleError} onLoad={e => setIsLoading(false)} className="statistics">
-
               <img onError={handleError} src={images[0].src} />
-              <img onError={handleError} src={images[1].src}></img>
+              <img onError={handleError} src={images[1].src} />
             </div>
           )
         )
