@@ -14,10 +14,10 @@ export default function Statistics() {
       image.onload = () => {
         images.push(image);
       }
-      image.onerror = () => {
-        setIsLoading(false);
-        setIsError(true);
-      }
+      // image.onerror = () => {
+      //   setIsLoading(false);
+      //   setIsError(true);
+      // }
     })
   }
 
