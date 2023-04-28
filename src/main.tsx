@@ -8,8 +8,9 @@ import {
   createBrowserRouter,
   Route,
   RouterProvider,
+  Navigate,
   Router,
-  Routes
+  Routes,
 } from "react-router-dom";
 import Home from './views/Home/Home';
 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       element: <Home />
     }, {
       path: "/home",
-      element: <Home />
+      element: <Navigate to="/"></Navigate>
     }]
   },
 ]);

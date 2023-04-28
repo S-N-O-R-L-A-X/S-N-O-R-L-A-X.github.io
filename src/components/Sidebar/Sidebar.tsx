@@ -11,8 +11,10 @@ import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   function navigate(event: Ui5CustomEvent<SideNavigationDomRef, { item: HTMLElement; }>) {
+    // if (event.detail.item.localName === "ui5-side-navigation-sub-item") {
     const path = (event.detail.item as any)["_state"].text;
     window.location.pathname += `${path}`;
+    // }
   }
   return (
     <div className="sidebar">
