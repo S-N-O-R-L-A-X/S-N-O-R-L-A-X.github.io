@@ -6,6 +6,7 @@ import Layout from './views/Layout/Layout';
 
 import {
   createBrowserRouter,
+  createHashRouter,
   Route,
   RouterProvider,
   Navigate,
@@ -14,7 +15,7 @@ import {
 } from "react-router-dom";
 import Home from './views/Home/Home';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     children: [{
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       element: <Navigate to="/"></Navigate>
     }]
   },
-]);
+], { basename: import.meta.env.PUBLIC_URL });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
