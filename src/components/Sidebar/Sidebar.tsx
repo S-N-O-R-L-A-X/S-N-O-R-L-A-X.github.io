@@ -20,15 +20,13 @@ export default function Sidebar() {
     <div className="sidebar">
       <SideNavigation
         style={{ width: "100%" }}
-        fixedItems={<><SideNavigationItem icon="chain-link" text="Useful Links" />
-          <SideNavigationItem icon="history" text="History" /></>}
+        fixedItems={<>
+          <SideNavigationItem icon="chain-link" text="Useful Links" />
+          <SideNavigationItem icon="history" text="History" />
+        </>}
         onSelectionChange={navigate}
       >
-        <SideNavigationItem
-          icon="home"
-          text="Home"
-        >
-        </SideNavigationItem>
+        <SideNavigationItem icon="home" text="Home" />
         <SideNavigationItem
           icon="activity-2"
           text="Other projects"
@@ -38,6 +36,7 @@ export default function Sidebar() {
           <SideNavigationSubItem text="Bridge" />
           <SideNavigationSubItem text="leetcode" />
           <SideNavigationSubItem text="tricks in javascript" />
+          <SideNavigationSubItem text="Bridge-Tools" />
         </SideNavigationItem>
 
       </SideNavigation>
