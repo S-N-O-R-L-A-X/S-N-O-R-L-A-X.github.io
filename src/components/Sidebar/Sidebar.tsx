@@ -7,13 +7,14 @@ import "@ui5/webcomponents-icons/dist/chain-link";
 import "@ui5/webcomponents-icons/dist/history";
 import "./index.css";
 
-import { Link } from 'react-router-dom';
-
 export default function Sidebar() {
   function navigate(event: Ui5CustomEvent<SideNavigationDomRef, { item: HTMLElement; }>) {
     // if (event.detail.item.localName === "ui5-side-navigation-sub-item") {
     const path = (event.detail.item as any)["_state"].text;
-    window.location.pathname += `${path}`;
+    switch (path) {
+      case "Home": window.location.pathname = window.location.pathname; break;
+      default: window.location.pathname += `${path}`;
+    }
     // }
   }
   return (
