@@ -16,6 +16,7 @@ export default function Profile() {
       <Label>柯南</Label>
       <Label>桌游</Label>
       <Label>code</Label>
+      <Label>F1</Label>
     </>
   );
 }

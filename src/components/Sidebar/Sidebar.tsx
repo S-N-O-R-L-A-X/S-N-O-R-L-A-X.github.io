@@ -12,8 +12,10 @@ export default function Sidebar() {
     // if (event.detail.item.localName === "ui5-side-navigation-sub-item") {
     const path = (event.detail.item as any)["_state"].text;
     switch (path) {
-      case "Home": window.location.pathname = window.location.pathname; break;
-      default: window.location.pathname += `${path}`;
+      case "Bridge": window.location.pathname += `${path}`; break;
+      case "leetcode": window.location.pathname += `${path}`; break;
+      case "Bridge-Tools": window.location.pathname += `${path}`; break;
+      default: window.location.pathname = window.location.pathname; break;
     }
     // }
   }
