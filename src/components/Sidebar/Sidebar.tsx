@@ -15,6 +15,7 @@ export default function Sidebar() {
       case "Bridge": window.location.pathname += `${path}`; break;
       case "leetcode": window.location.pathname += `${path}`; break;
       case "Bridge-Tools": window.location.pathname += `${path}`; break;
+      case "noname extension": window.location.pathname += "noname-extension"; break;
       default: window.location.pathname = window.location.pathname; break;
     }
     // }

@@ -15,6 +15,7 @@ export default function Profile() {
       <Label>宝可梦</Label>
       <Label>柯南</Label>
       <Label>桌游</Label>
+      <Label>喵星人大战</Label>
       <Label>code</Label>
       <Label>F1</Label>
     </>
