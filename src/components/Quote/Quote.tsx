@@ -7,9 +7,7 @@ export default function Quote() {
   return (
     <div className="blockquote-wrapper">
       <div className="blockquote">
-        <h1>
-          {content}
-        </h1>
+        <h1 dangerouslySetInnerHTML={{ __html: content }} />
         <h4>&mdash;{source}<br /></h4>
       </div>
     </div>
