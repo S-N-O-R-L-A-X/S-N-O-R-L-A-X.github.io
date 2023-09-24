@@ -5,7 +5,8 @@ import Loading from "./Loading";
 export default function Statistics() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isError, setIsError] = useState<boolean>(false);
-  const card_links = ["https://github-readme-streak-stats.herokuapp.com/?user=S-N-O-R-L-A-X&theme=dark&hide_border=true", "https://github-readme-stats.vercel.app/api?username=S-N-O-R-L-A-X&hide_title=true&hide_border=true&show_icons=trueline_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite"];
+  const card_links = ["https://scastiel.dev/api/image/S-N-O-R-L-A-X?removeLink"];
+  // const card_links = [ "https://github-readme-streak-stats.herokuapp.com/?user=S-N-O-R-L-A-X&theme=dark&hide_border=true", "https://github-readme-stats.vercel.app/api?username=S-N-O-R-L-A-X&hide_title=true&hide_border=true&show_icons=trueline_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite"];
   function getPictures() {
     card_links.forEach((card_link) => {
       const image = new Image();
