@@ -16,6 +16,7 @@ export default function Sidebar() {
       case "leetcode": window.location.pathname += `${path}`; break;
       case "Bridge-Tools": window.location.pathname += `${path}`; break;
       case "noname extension": window.location.pathname += "noname-extension"; break;
+      case "Art Components": window.location.pathname += "art-components"; break;
       default: window.location.pathname = window.location.pathname; break;
     }
     // }
@@ -39,8 +40,9 @@ export default function Sidebar() {
           <SideNavigationSubItem text="noname extension" />
           <SideNavigationSubItem text="Bridge" />
           <SideNavigationSubItem text="leetcode" />
-          <SideNavigationSubItem text="tricks in javascript" />
+          {/* <SideNavigationSubItem text="tricks in javascript" /> */}
           <SideNavigationSubItem text="Bridge-Tools" />
+          <SideNavigationSubItem text="Art Components" />
         </SideNavigationItem>
 
       </SideNavigation>
