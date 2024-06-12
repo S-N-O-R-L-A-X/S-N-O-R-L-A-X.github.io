@@ -27,7 +27,6 @@ export default function Sidebar() {
         style={{ width: "100%" }}
         fixedItems={<>
           <SideNavigationItem icon="chain-link" text="Useful Links" />
-          <SideNavigationItem icon="history" text="History" />
         </>}
         onSelectionChange={navigate}
       >
