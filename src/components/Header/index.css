@@ -1,9 +1,6 @@
 .github-corner {
   border-bottom: 0;
-  position: fixed;
-  right: 0;
   text-decoration: none;
-  top: 0;
   z-index: 1;
 }
 
@@ -46,8 +43,12 @@
   width: var(--header-height);
 }
 
+.sponsor {
+  margin: 1rem
+}
+
 .marquee {
-  width: 60%;
+  /* width: 55%; */
   font-family: "华文彩云";
   font-size: 3rem;
   margin: 0;
@@ -59,7 +60,7 @@
 
 @keyframes marquee {
   0% {
-    transform: translate(50%, 0);
+    transform: translate(33%, 0);
   }
 
   50% {
@@ -67,6 +68,6 @@
   }
 
   100% {
-    transform: translate(50%, 0);
+    transform: translate(33%, 0);
   }
 }

@@ -15,7 +15,7 @@ export default function Header() {
         Welcome to my site. I'm SNORLAX.
       </p>
       <FlexBox>
-        <MoneyButton style={{ "margin": "1rem" }} onClick={clickHandler}> Sponsor me </MoneyButton>
+        <MoneyButton className="sponsor" onClick={clickHandler}> Sponsor me </MoneyButton>
         <Octocat />
       </FlexBox>
       <SponsorDialog open={isDialogOpen} closeHandler={() => { setIsDialogOpen(false) }} />
